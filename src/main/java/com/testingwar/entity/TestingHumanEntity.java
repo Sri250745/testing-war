@@ -21,7 +21,7 @@ public final class TestingHumanEntity extends PathfinderMob {
 
 	public TestingHumanEntity(EntityType<? extends TestingHumanEntity> type, Level level) {
 		super(type, level);
-		this.characterName = "Citizen-" + this.getId();
+		this.characterName = "Citizen-" + this.characterId.toString().substring(0, 8);
 		this.setCustomName(Component.literal(this.characterName));
 		this.setCustomNameVisible(true);
 	}
