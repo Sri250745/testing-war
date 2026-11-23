@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "testing_war",
+	"version": "${version}",
+	"name": "Testing War",
+	"description": "Early player-style NPC foundation for a local single-player survival simulation.",
+	"authors": [
+		"Testing War Project"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.testingwar.TestingWarMod"
+		],
+		"client": [
+			"com.testingwar.client.TestingWarClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
